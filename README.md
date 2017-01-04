@@ -1,3 +1,7 @@
+Cloud Application Development (COMP3207) 
+Group Coursework Assignment (Demo Prototype): Maze: The Amazeing Adventures 
+Prototype URL: amazeing-adventures.appspot.com
+
 The game can be played by any user, but users with a google account can create new mazes, extend existing ones. They can also save their total score as well as having their usernames recorded in case of beating the best score for a maze.
 Creating a maze:
 A. Select the size of your maze. The initial one is 16*10. Players can both change the height and weight of your maze. Considering the suitable size of a maze, we limit the maximum size to 30*30.
