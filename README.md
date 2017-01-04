@@ -1,6 +1,6 @@
 Cloud Application Development (COMP3207) 
 Group Coursework Assignment (Demo Prototype): Maze: The Amazeing Adventures 
-Prototype URL: <a href = "http://amazeing-adventures.appspot.com">amazeing-adventures demo</a>
+Prototype URL: <a href = "http://amazeing-adventures.appspot.com" target="_blank">amazeing-adventures demo</a>
 
 The game can be played by any user, but users with a google account can create new mazes, extend existing ones. They can also save their total score as well as having their usernames recorded in case of beating the best score for a maze.
 Creating a maze:
