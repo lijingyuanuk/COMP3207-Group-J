@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block main %}
+<div id="quest">
+	<div id="title">Extend Adventures</div>
+	<div class="nice-block">
+		You can extend all other mazes to create a new, more awesome one!
+	</div>
+	<div id="mazes">
+		{% for maze in mazes %}
+				<p class="nice-block"><span class="maze-name">{{ maze.name }}</span>
+					<span class="maze-info">Author: {{ maze.author }}</span>
+					<a href="/extend/{{ maze.id }}">Extend me!</a></p>
+			{% endfor %}
+	</div>
+</div>
+{% endblock %}

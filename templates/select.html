@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block main %}
+<div id="quest">
+	<div id="title">Select Your Adventure</div>
+	<div id="mazes">
+		{% for maze in mazes %}
+		<p class="nice-block">
+			<span class="maze-name">{{ maze.name }}</span>
+			<span class="maze-info">Best score: {{ maze.best_score }}, by: {{ maze.player_best_score }}</span>
+			<a href="/play/{{ maze.id }}">Go on an Adventure!</a>	
+		</p>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

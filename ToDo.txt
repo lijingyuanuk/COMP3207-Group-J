@@ -1,0 +1,15 @@
+Stuff to do
+================================================================================
+- maze grouping option, by creatoin date, popularity and creators
+- choosing the time in create mode for how long the maze is ment to be played between 1 to 4 minutes
+- proper page layout
+- fix the step counting while draging
+- remove the mouse input while playing
+- separate controls for remote devices
+
+- users 'table':
+	* user name
+	* 
+
+
+

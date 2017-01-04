@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+{% block main %}
+<div id="quest">
+	<div id="title">The Amazeing Top 10 Players Adventurers</div>
+	<div id="mazes">
+		{% for player in players %}
+			<p class="nice-block">{{ player.nickname }} - Total Score:	{{ player.score }}</p>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block main %}
+<div id="quest">
+		<div id="title">Welcome, Adventurer!</div>
+	<div class="nice-block">
+		You found yourself lost in a maze full of treasures, and your only hope to survive is getting to the nearest castle. But be careful: strange creatures from the sea are coming!<br>Can you find the castle before your tiredness consumes you?
+		<ul>
+			<li>Move your adventurer <img class="nice-pics" src="../img/bunny.png" title="It's You!" alt="Adventurer" > using the directional keys or pressing the corresponding buttons on the screen. </li>
+			<li>You can only walk on the grass <img class="nice-pics" src="../img/wood.png" title="Grass. Awesome!" alt="Grass"></li>
+			<li>Your goal is to get to the castle <img class="nice-pics" src="../img/exit.png" title="Castle, your only home." alt="Castle"> before you run out of time or stamina.</li>
+			<li>You can collect stamina potions <img class="nice-pics" src="../img/increase-steps.png" title="Stamina potion." alt="Stamina"> to regenerate your stamina.</li>
+			<li>To successfully enter the castle, you need to collect all the keys <img class="nice-pics" src="../img/key.png" title="Key. Keys open things." alt="Key">.</li>
+			<li>Some mazes can automatically redirect you to a new maze after entering the castle. Use it wisely, because it's the only way you can play in these new mazes!</li>
+			<li>Collect the gems <img class="nice-pics" src="../img/star.png" title="Gems will make you rich." alt="Gem"> to increase your score.</li>
+		</ul>
+		<span class="nice-text">Have fun! Maybe you can find your name amongst the top adventurers :)</span>
+	<div>
+</div>
+{% endblock %}

@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #3D92C0;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+header {
+    background: #06699E;
+    width: 100%;
+    padding: 40px 0px; 
+    text-align: center;
+}
+/*Original Idea of Elad Shechter:; https://coderwall.com/p/wjcryg/3d-buttons-in-css */
+button{ 
+  float:left;               margin-right:4px;           background-color:chocolate;
+  height:70px;              line-height:40px;           padding:0 20px;
+  font-weight:bold;         font-size: 30px;            color: bisque;
+  border: solid 5px #000;   border-width:0 4px 5px 0;   border-radius:5px;
+  border-color:transparent sandybrown saddlebrown transparent;
+  width: 120px;             cursor:pointer;
+}
+button:active{
+  border-width:0 2px 3px 0;   margin-right: 6px;     color: gold; margin-top: 2px;
+  position:relative;          left:2px;             top:3px;
+  width: 118px;               height: 67px;
+}
+.nice-block, #renderer canvas {
+    padding-top: 10px;    padding-bottom: 3px;                      padding-left: 15px;         padding-right: 15px;
+    margin-top: 5px;      background-color: saddlebrown;            text-align: center;
+    color: papayawhip;    font: bold 18px arial;             
+    border: solid 5px #000;   border-width:0 4px 5px 0;   border-radius:5px;
+    border-color:transparent sandybrown chocolate transparent;
+}
+span.nice-text {
+    font: italic bold 1em serif;    padding: 20px;
+    text-align: center;             color: gold;
+}
+span.normal-text {text-align: center;    color: gold;}
+#user-login {
+    background-color: #034162;
+    text-decoration: none; 
+    text-align: center;
+    color: white;
+    padding: 10px 15px;
+    -webkit-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+#user-login:hover {
+    background-color: #3D92C0;
+}
+nav { text-align: center;   width: 100%;}
+nav div {
+    background-color: #1682BC;
+    border-top: 4px solid #1682BC;
+}
+nav ul{
+    display: inline-block;    background-color: #1682BC;    padding: 0;
+    margin: auto;
+}
+nav ul li {
+    float: left;    display: inline-block;    padding: 20px;    margin: auto;
+    -webkit-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+nav ul li:hover { background-color: #04547F; }
+.main-content {
+    font-size: 0.9em;   line-height: 1.5em;
+    margin: 10px auto 50px auto;          padding: 40px;
+}
+#quest {
+    background-color: papayawhip;  text-align: justify;    color: #452F14;
+    padding: 20px 30px;         margin: auto;           width: 75%;
+}
+.nice-block ul {
+   margin: auto;         padding: 0;
+   line-height: 1.5em;   text-align: left;
+   margin-left: 10px;
+}
+.nice-block ul li { padding-bottom: 10px; }
+.nice-block .nice-pics {
+    position: relative;         top: 5px;                  margin: 0px;
+    width:30px; height:30px;    padding: 3px; 
+    background-color: wheat;    color: saddlebrown;
+    border: solid 5px #000;     border-width:0 4px 5px 0;   border-radius:5px;
+    border-color:transparent sandybrown chocolate transparent;
+}
+#title {
+    font: italic bold 30px serif;       color: gold;             background-color: saddlebrown;    text-align: center;
+    padding: 10px;              margin-bottom: 20px;                display: block;
+    border: solid 5px #000;   border-width:0 4px 5px 0;   border-radius:5px;
+    border-color:transparent sandybrown chocolate transparent;
+}
+
+#mazes a, .nice-block a, #btn{
+    background-color: wheat;    display: inline-block;    color: saddlebrown;
+    border: solid 5px #000;   border-width:0 4px 5px 0;   border-radius:5px;
+    border-color:transparent sandybrown chocolate transparent;
+    margin-top: 10px;    padding: 10px;     width: 100px;
+    margin-bottom: 4px;
+}
+#btn {float: right; border-color:transparent sandybrown saddlebrown transparent;}
+#mazes a:hover, .nice-block a:hover {
+    color: goldenrod;
+}
+#mazes a:active, .nice-block a:active, #btn:active {
+    border-width:0 2px 3px 0;   color: goldenrod;   margin-top: 9px;
+    position:relative;          left:2px;             top:3px;     margin-bottom: 7px; 
+}
+#btn:active { margin-bottom: 10px; }
+.maze-name {
+    font-size: 30px;        font-weight: bold;
+    font-style: italic;     color: gold;
+    display: block;
+}
+.maze-info {display: block;    font-size: 14px;    font-weight: 100; }
+/* The "Clearfix" hack form: http://css-tricks.com/snippets/css/clear-fix/ */
+.clearfix:before, .clearfix:after {
+    content: " "; /*allows to work in opera*/
+    display: block; /*Treats element as block element*/
+}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;}/*Hax for IE 6 and 7*/
+.game {
+    background-color: papayawhip;    padding: 20px 30px;
+    margin: auto;                    max-width: 1500px;
+    text-align: center;              display: table;
+}
+#renderer canvas {padding-bottom: 10px; }
+.controls {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.left {float: left;}
+.right {float: right;}
+.status {
+    background-color: chocolate;
+    margin-right: 4px;
+    display: inline-block;
+    width: 296px;             max-width: 296px;
+    border: solid 5px #000;   border-width:0 4px 5px 0;   border-radius:5px;
+    border-color:transparent sandybrown saddlebrown transparent;
+}
+.status div {padding: 5px;   font-size: 16px;}
+#time{
+    position: relative;     left: 5px;              top: 20px; 
+    font-size: 50px;        color: gold;
+}
+#left {} #right {} #down {} #up {}
+footer {
+    text-align: center;
+    text-decoration: overline;
+    background-color: #06699E;
+    position: fixed;
+    margin: 0;
+    bottom:0;
+    left:0;
+    width: 100%;
+    padding: 20px;
+}
+.toolbox {
+    display: inline-block;
+    width: 100%;
+}
+.buttons {height: 80px; max-height: 80px; margin-top: 5px;}
+.buttons button {
+    width: 60px;    height: 60px;             padding: 8px;
+    float: none;    margin:0px;               cursor: pointer;
+}
+.active {background-color: goldenrod;}
+.buttons img {width:40px; height: 40px;}
+.inputs {
+    font-size: 20px;    font-weight: 500px;     text-align: left;
+    line-height: 1.5em;
+    padding: 20px;      color:gold;
+    background-color: chocolate;
+    border: solid 5px #000;   border-width:0 4px 5px 0;   border-radius:5px;
+    border-color:transparent sandybrown saddlebrown transparent;
+    width: 600px; display: inline-block;    height: 180px;
+    margin-bottom: 5px; 
+}
+.inputs input, select {
+  margin: 2px;
+  background-color: papayawhip;
+  color: saddlebrown;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border: solid 5px #000;   border-width:4px;   border-radius:5px;
+  border-color: sandybrown; 
+}
+.inputs select {width: 300px; overflow: scroll;}
+.inputs input:focus, .inputs select:focus {
+  outline: saddlebrown; border-color: saddlebrown;
+}
+#status {float: right; }
+#stat-msg {float: left;     display: inline-block;}
+/* Original idea by Kevin Liew: http://www.queness.com/post/1696/create-a-beautiful-looking-custom-dialog-box-with-jquery-and-css3 */
+#dialog-overlay {
+    width:100%;
+    height:100%;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    background:#000;
+    position:absolute;
+    top:0; left:0;
+    z-index:3000;
+    display:none;
+}
+#dialog-box {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width:328px;
+    position:absolute;
+    z-index:5000;
+    display:none;
+    background-color: papayawhip;
+}
+#dialog-box .dialog-content {
+    text-align: center;
+    padding:10px;
+    margin:13px;
+    color: saddlebrown;
+    font-size:12px;
+}
+#dialog-box button {
+    display: inline-block;
+    float: none;
+    line-height: 20px;
+    font-size: 20px;
+    margin-top: 5px;
+}

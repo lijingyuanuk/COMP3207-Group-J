@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>{{ title }}</title>
+		<meta charset="utf-8" name="viewport" content="user-scalable=0">
+		{% for jsfile in jsfiles %}
+			<script src="{{ jsfile }}"></script>
+		{% endfor %}
+		<link rel="shortcut icon" href="{{ icon }}">
+        <link rel="stylesheet" href="{{ cssfile }}"> 
+	</head>
+	<body>
+		<header>
+			<h1>The Amazeing Adventures.</h1>
+				{{ userpanel }}
+		</header>
+		<nav class="clearfix">
+		<div>
+			<ul>	
+			{% for nav in navs %}
+				<a href="{{ nav.url }}"><li>{{ nav.text }}</li></a>
+			{% endfor %}
+			</ul>
+		</div>
+		</nav>
+		<section class="main-content clearfix">
+			{% block main %}
+			{% endblock %}
+		</section>
+		<footer> 
+			This app was created by Group J
+		</footer>
+	</body>
+</html>

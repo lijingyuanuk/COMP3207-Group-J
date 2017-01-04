@@ -1,0 +1,33 @@
+{% extends "index.html" %}
+{% block main %}
+<div class="game clearfix">
+  <div id="renderer">
+    <div id="dialog-overlay"></div>
+      <div id="dialog-box">
+        <div class="dialog-content">
+            <div id="dialog-message"></div>
+            <button id="popup-btn">Close</button>
+        </div>
+    </div>
+  </div>
+  <div class="controls clearfix">
+   <div class="left">
+     <button type="button" id="up">up</button> <button type="button" id="down">down</button>
+   </div> 
+   <div class="status">
+      <div class="left">time<br><span id="time">:<span></div>
+      <div class="right">
+        <img src="../img/increase-steps.png"><span id="steps_num">0</span><br>
+        <img src="../img/star.png"><span id="stars_num">0/x</span>
+        <img src="../img/key.png"><span id="keys_num">0/x</span>
+      </div>
+   </div> 
+   <div class="right">
+     <button type="button" id="left">left</button> <button type="button" id="right">right</button>
+   </div> 
+
+       
+
+  </div>
+</div>
+{% endblock %}

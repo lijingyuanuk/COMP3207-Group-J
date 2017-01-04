@@ -1,0 +1,67 @@
+{% extends "index.html" %}
+{% block main %}
+<div class="game clearfix">
+	<div id="title">Your personal creation guide.</div>
+	<div class="nice-block">
+			So you say that you have seen everything and battled every monster, ehy?<br>Let's see if you have enough creativity and imagination to make your own adventures!<br>
+			This short guide will teach you how to create your own adventures.<br>
+			<a href="#blank-btn">Skip the guide.<br>I am Pro!</a>
+		<ul>
+			<li>You will find all usefull tools in toolbelt below.</li>
+			<li>Click on a tool that you want to place on the maze field.</li>
+			<li>You can create land using Grass <img class="nice-pics" src="../img/wood.png" title="Grass. Awesome!" alt="Grass"> field and get rid of it using Marsh <img class="nice-pics" src="../img/blank.png" title="Marsh. Gross!" alt="Marsh"> field.</li>
+			<li>You can always use a Bucket <img class="nice-pics" src="../img/bucket.png" title="Dump me." alt="Bucket"> to add some speed to your work.</li>
+			<li>Grass is the only field that can be used to place items like gems <img class="nice-pics" src="../img/star.png" title="Gems will make you rich." alt="Gem">, keys <img class="nice-pics" src="../img/key.png" title="Key. Keys open things." alt="Key">, potions <img class="nice-pics" src="../img/increase-steps.png" title="Stamina potion." alt="Stamina">
+			, castle <img class="nice-pics" src="../img/exit.png" title="Castle, your only home." alt="Castle"> and adventurer <img class="nice-pics" src="../img/bunny.png" title="It's You!" alt="Adventurer" >.</li>
+			<li>You can erase all the items using Eraser <img class="nice-pics" src="../img/emptyBtn.png" alt="Empty" title="I destroy!">.</li>
+			<li>Place Stamina Potions in strategic places, so your adventurers will be able to survive! Stamina Potions recover only 10 stamina and up to maximum 20.</li>
+			<li>Place some Gems around your adventure filed. Make your adventurers rich!</li>
+			<li>The Castle is the only refuge for the adventurers. Place it to help them survive the night.</li>
+			<li>Your adventurers will need all the Keys you are going to place on the maze field to enter the castle.</li>
+			<li>You can edit the size of your maze by changing the width (max 30) and height (max 30) below.</li>
+			<li>You can also change the time limit (maximum 120 seconds) for adventurers to explore your maze. Then it gets dark, and adventurers are afraid of the dark :(.</li>
+			<li>Choose a nice and unique name for your maze. It will be easier to recognize it amongst adventurers.</li>
+			<li>REMEMBER, You and ONLY YOU are responsible for your creations. You can easly make an uncompleatable, horrible, nightmarish adventure :(!</li>
+		</ul>
+		<span class="nice-text">Good luck with your creations, young creator!</span>
+	</div>
+	<h1 id="title"> 	
+		<div id="stat-msg">Creation status: </div><span id="status"></span><div class="clearfix"></div> 	
+	</h1>
+<div id="renderer"></div>
+<div class="controls clearfix">
+   <div class="toolbox">
+		<div class="buttons">
+					<!--<button id="leftBrush-btn"><img src="../img/wood.png" title="Left Brush" alt="Left Brush"></button>
+					<button id="rightBrush-btn"><img src="../img/blank.png" title="Right Brush" alt="Right Brush"></button>-->
+					<button id="blank-btn" title="Marsh"><img  src="../img/blank.png" alt="Blank"></button>
+					<button id="wood-btn" title="Grass"><img src="../img/wood.png" alt="Wood"></button>
+					<button id="empty-btn" title="Erase"><img  src="../img/emptyBtn.png" alt="Empty"></button>
+					<button id="spawn-btn" title="Start"><img  src="../img/bunny.png" alt="Spawn"></button>
+					<button id="star-btn" title="Gem"><img  src="../img/star.png" alt="Star"></button>
+					<button id="incsteps-btn" title="Stamina potion"><img  src="../img/increase-steps.png" alt="Increase remaining steps"></button>
+					<button id="key-btn" title="Key"><img  src="../img/key.png" alt="Key"></button>
+					<button id="exit-btn" title="Castle"><img  src="../img/exit.png" alt="Exit"></button>
+					<button id="fill-btn" title="Bucket"><img  src="../img/bucket.png" alt="Bucket"></button>
+		</div>
+		<div class="inputs">
+					Select previous maze:
+					<select id="prev-maze" name="prev-maze">
+						<option value="none">No previous maze</option>
+						{% for maze in mazes %}
+							<option value="{{ maze.id }}">Maze {{ maze.name }}</option>
+						{% endfor %}
+					</select><br>
+					<label for="width-spin">Width: </label><input id="width-spin" name="width-spin" type="number" value="16" min="16" max="30" />
+					<label for="height-spin">Height: </label><input id="height-spin" name="height-spin" type="number" value="10" min="10" max="30"/>
+					<label for="whole_seconds"><br>Time limit (seconds): </label><input id="whole_seconds" name="whole_seconds" type="number" value="10" min="10" max="120" />
+					<form action="/create" id="saveForm">
+						<label for="Mname">Maze name: </label>
+						<input id = "Mname1" type="text" name="Mname" value = ""><br>
+						<input id = "btn" type="submit" value="Save">
+					</form>
+		</div>
+     </div> 
+  </div>
+</div>
+{% endblock %}
